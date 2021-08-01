@@ -1,0 +1,28 @@
+<Root>:
+    password_label: password_label
+    copy_btn: copy_btn
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: (5, 5)
+
+        Label:
+            text: "Password Generator"
+            font_size: 64
+            color: 1, 0.5, 0.0, 1.0
+        Label:
+            id: password_label
+            text: ""
+            font_size: 48
+        Button:
+            id: copy_btn
+            text: "Copy to clipboard"
+            font_size: 24
+            size_hint: 1.0, 0.25
+            disabled: True
+            on_press: root.copy_password()
+        Button:
+            text: "Generate"
+            font_size: 48
+            size_hint: 1.0, 0.75
+            on_press: root.generate_password()
