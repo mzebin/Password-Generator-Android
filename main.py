@@ -20,10 +20,10 @@ CHARS = UPPERCASE + LOWERCASE + DIGITS + PUNCTUATION
 LENGTH = 13
 
 
-class Root(BoxLayout):
+class MyRoot(BoxLayout):
 
     def __init__(self):
-        super(Root, self).__init__()
+        super(MyRoot, self).__init__()
 
     @staticmethod
     def get_random_password():
@@ -53,7 +53,7 @@ class Root(BoxLayout):
 class PWGenerator(App):
 
     def build(self):
-        return Root()
+        return MyRoot()
 
 
 pwgenerator = PWGenerator()
